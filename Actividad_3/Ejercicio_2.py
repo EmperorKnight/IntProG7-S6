@@ -8,6 +8,8 @@ def numeros_pares(num):
         par = contador % 2
         if par == 0:
             print(f"El numero {contador} es par")
+        else:
+            print("El numero {} es inpar".format(contador))
         contador += 1
 
 
