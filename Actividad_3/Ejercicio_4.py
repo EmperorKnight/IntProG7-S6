@@ -1,13 +1,15 @@
-#  Contador regresivo
+# Contador regresivo
 
 import os
+import time
 
 def main():
     os.system("cls || clear")
     numero = int(input(f"Introduzca un numero \n-> "))
-    i = numero
-    while i != 0:
-        i -= 1
-        print(f"Cuenta regresiva: {i}")
+    while numero >= 0:
+        print(f"\rConteo regresivo: {numero}          ",end = "")
+        time.sleep(1)
+        numero -= 1
+    print("Fin de la cuenta regresiva")
 
 main()
