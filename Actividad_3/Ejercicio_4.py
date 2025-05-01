@@ -3,12 +3,14 @@
 import os
 import time
 
+def cuenta_regresiva(tiempo):
+    for i in range(tiempo,0,-1):
+        print(f"\rConteo regresivo: {i}  ",end = "")
+        time.sleep(1)
+    print(f"\nFin de la cuenta regresiva")
+
 def main():
     os.system("cls || clear")
     numero = int(input(f"Introduzca un numero \n-> "))
-    while numero >= 0:
-        print(f"\rConteo regresivo: {numero}  ",end = "")
-        time.sleep(1)
-        numero -= 1
-    print(f"\nFin de la cuenta regresiva")
+    cuenta_regresiva(numero)
 main()
